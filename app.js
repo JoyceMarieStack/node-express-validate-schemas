@@ -3,7 +3,6 @@ const bodyParser = require("body-parser");
 const multer = require("multer");
 const Ajv = require("ajv");
 const fs = require("fs");
-const { json } = require("express");
 
 const app = express();
 const ajv = new Ajv();

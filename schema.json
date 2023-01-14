@@ -5,50 +5,24 @@
     "data": {
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "id": { "type": "string" },
-          "name": { "type": "string" },
-          "headline": { "type": "string" },
-          "author": {
-            "type": "object",
-            "properties": {
-              "name": { "type": "string" },
-              "email": { "type": "string" }
-            },
-            "required": ["name"]
-          },
-          "datePublished": { "type": "string", "format": "date-time" },
-          "articleBody": { "type": "string" },
-          "image": { "type": "string" },
-          "publisher": {
-            "type": "object",
-            "properties": {
-              "name": { "type": "string" },
-              "logo": { "type": "string" }
-            },
-            "required": ["name"]
-          }
-        },
-        "required": [
-          "id",
-          "name",
-          "headline",
-          "author",
-          "datePublished",
-          "articleBody"
-        ]
+        "$ref": "https://schema.org/Article"
+      }
+    },
+    "errors": {
+      "type": "array",
+      "items": {
+        "type": "string"
       }
     },
     "pagination": {
       "type": "object",
       "properties": {
-        "current_page": { "type": "integer" },
+        "page": { "type": "integer" },
         "per_page": { "type": "integer" },
-        "total": { "type": "integer" },
-        "last_page": { "type": "integer" }
+        "total_pages": { "type": "integer" },
+        "total_items": { "type": "integer" }
       },
-      "required": ["current_page", "per_page", "total", "last_page"]
+      "required": ["page", "per_page", "total_pages", "total_items"]
     }
   },
   "required": ["data", "pagination"]
