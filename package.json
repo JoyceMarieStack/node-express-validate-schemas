@@ -1,0 +1,16 @@
+{
+  "name": "node-express-hello-world",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.13.3",
+    "multer": "latest"
+  }
+}
