@@ -1,0 +1,42 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "name": "Article One",
+      "headline": "Headline of Article One",
+      "author": {
+        "name": "John Doe",
+        "email": "johndoe@example.com"
+      },
+      "datePublished": "2022-01-01T00:00:00Z",
+      "articleBody": "Body of Article One",
+      "image": "https://example.com/article1.jpg",
+      "publisher": {
+        "name": "Example Publication",
+        "logo": "https://example.com/logo.jpg"
+      }
+    },
+    {
+      "id": "2",
+      "name": "Article Two",
+      "headline": "Headline of Article Two",
+      "author": {
+        "name": "Jane Smith",
+        "email": "janesmith@example.com"
+      },
+      "datePublished": "2022-02-01T00:00:00Z",
+      "articleBody": "Body of Article Two",
+      "image": "https://example.com/article2.jpg",
+      "publisher": {
+        "name": "Example Publication",
+        "logo": "https://example.com/logo.jpg"
+      }
+    }
+  ],
+  "pagination": {
+    "current_page": 1,
+    "per_page": 10,
+    "total": 100,
+    "last_page": 10
+  }
+}

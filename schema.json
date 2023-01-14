@@ -9,9 +9,35 @@
         "properties": {
           "id": { "type": "string" },
           "name": { "type": "string" },
-          "description": { "type": "string" }
+          "headline": { "type": "string" },
+          "author": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "email": { "type": "string" }
+            },
+            "required": ["name"]
+          },
+          "datePublished": { "type": "string", "format": "date-time" },
+          "articleBody": { "type": "string" },
+          "image": { "type": "string" },
+          "publisher": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "logo": { "type": "string" }
+            },
+            "required": ["name"]
+          }
         },
-        "required": ["id", "name"]
+        "required": [
+          "id",
+          "name",
+          "headline",
+          "author",
+          "datePublished",
+          "articleBody"
+        ]
       }
     },
     "pagination": {
