@@ -1,7 +1,7 @@
 {
-  "name": "node-express-hello-world",
+  "name": "express-hello-world",
   "version": "1.0.0",
-  "description": "",
+  "description": "```",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
@@ -9,8 +9,17 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "ajv": "^6.12.6",
     "ejs": "^3.1.8",
     "express": "^4.13.3",
     "multer": "latest"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoyceMarieStack/node-express-validate-schemas.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JoyceMarieStack/node-express-validate-schemas/issues"
+  },
+  "homepage": "https://github.com/JoyceMarieStack/node-express-validate-schemas#readme"
 }

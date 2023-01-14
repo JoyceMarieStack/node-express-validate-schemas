@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "description": { "type": "string" }
+        },
+        "required": ["id", "name"]
+      }
+    },
+    "pagination": {
+      "type": "object",
+      "properties": {
+        "current_page": { "type": "integer" },
+        "per_page": { "type": "integer" },
+        "total": { "type": "integer" },
+        "last_page": { "type": "integer" }
+      },
+      "required": ["current_page", "per_page", "total", "last_page"]
+    }
+  },
+  "required": ["data", "pagination"]
+}
